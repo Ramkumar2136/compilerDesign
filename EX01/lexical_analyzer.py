@@ -2,14 +2,16 @@ import re
 
 patterns =[
     ('IMPORTS',r'<stdio.h>|<conio.h>|<stdlib.h>'),
-    ('KEYWORD',r'#include|if|else|for|break|int|float|double|printf|scanf|getch\(\)|while|do'),
+    ('KEYWORD',r'#include|if|else|for|break|int|float|String|char|double|printf|scanf|getch\(\)|while|do'),
     ('FLOAT',r'\d+\.\d+'),
     ('INT',r'\d+'),
-    ('OPERATOR',r'[\+-/\*=]'),
+    ('OPERATOR',r'\+?\+|-|\*|/|=|==|<|>'),
     ('ID',r'[a-zA-z_][a-zA-Z0-9_]*'),
     ('LPARAN',r'\('),
     ('RPARAN',r'\)'),
-    ('SEPRATOR',r'[;:,]')
+    ('SEPRATOR',r'[;:,\{\}]'),
+    ("STRING",r'\"[a-zA-z0-9]*\"')
+    
 ]
 
 def lexier(source_code):
