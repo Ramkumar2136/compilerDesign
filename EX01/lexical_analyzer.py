@@ -5,7 +5,7 @@ patterns =[
     ('KEYWORD',r'#include|if|else|for|break|int|float|String|char|double|printf|scanf|getch\(\)|while|do'),
     ('FLOAT',r'\d+\.\d+'),
     ('INT',r'\d+'),
-    ('OPERATOR',r'\+?\+|-|\*|/|=|==|<|>'),
+    ('OPERATOR',r'\+?\+|-|\*|/|=|==|<|>|>=|<=|\?'),
     ('ID',r'[a-zA-z_][a-zA-Z0-9_]*'),
     ('LPARAN',r'\('),
     ('RPARAN',r'\)'),
